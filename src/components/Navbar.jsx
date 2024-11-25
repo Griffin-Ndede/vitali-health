@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="bg-teal top-0 fixed w-full shadow-2xl">
       <div className="mx-auto">
-        <div className="flex justify-between items-center h-16 px-10">
+        <div className="flex justify-between items-center h-16 px-8">
           {/* Company logo */}
-          <div className="">
+          <div>
             <h1 className="text-4xl text-soft-coral font-bold hover:cursor-pointer">Vitali Health</h1>
           </div>
 
