@@ -2,8 +2,9 @@ function Home() {
   return (
     <>
       {/* Main Section */}
-      <section className="h-screen mt-20 flex flex-col md:flex-row justify-between items-center text-center md:text-left px-6 md:px-16">
+      <section className="h-screen mt-32 text-center md:text-left">
         {/* Text Content */}
+        <div className="flex flex-col md:flex-row justify-evenly items-center">
         <div className="max-w-3xl mb-8 md:mb-0">
           <h1 className="text-4xl font-bold text-teal mb-6">Welcome to Vitali Health</h1>
           <p className="text-xl  mb-10">
@@ -20,13 +21,11 @@ function Home() {
           <img
             src="/images/athlete.webp"
             alt="Lady working out"
-            className="object-cover rounded-xl shadow-2xl w-full"
+            className="object-cover rounded-[20%_40%_26%_86%/42%_47%_53%_58%] shadow-2xl w-full"
           />
         </div>
-      </section>
-
-      {/* Cards Section */}
-      <section className="px-6 md:px-16 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+        </div>
+        <div className="px-6 md:px-16 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
         {/* Card 1 */}
         <div className="bg-white shadow-2xl rounded-3xl p-10">
           <h2 className="text-2xl font-bold text-teal mb-2">Personalized Plans</h2>
@@ -50,30 +49,35 @@ function Home() {
             Join a community of like-minded individuals on your fitness journey.
           </p>
         </div>
+      </div>
+     
       </section>
 
+      {/* Cards Section */}
+     
+
       {/* Hypertension Section */}
-      <section className="px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
+      <section className="px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-auto">
           <img
             src="/images/athlete.webp"
             alt="African woman exercising with focus and energy"
-            className="object-cover rounded-xl shadow-2xl w-auto h-2/3"
+            className="object-cover rounded-[20%_40%_26%_86%/42%_47%_53%_58%] shadow-2xl w-auto h-2/3"
           />
         </div>
 
         {/* Text Section */}
         <div className="flex-1">
-          <h1 className="text-4xl font-extrabold mb-6 text-teal">
+          <h1 className="text-4xl font-extrabold mb-6 text-teal md:items-center text-center ">
             A Unified Approach to Hypertension Management
           </h1>
-          <p className="text-lg  mb-4">
+          <p className="text-xl  mb-4">
             We provide an integrated solution combining nutrition, fitness, stress management, 
             and lifestyle changes to empower patients with hypertension to take control of their health.
           </p>
-          <p className="text-lg  mb-4">Our platform offers:</p>
-          <ul className="list-disc pl-6 space-y-2 ">
+          <p className="text-xl  mb-4">Our platform offers:</p>
+          <ul className="list-disc pl-6 space-y-2 text-xl ">
             <li>
               <strong>Tailored Nutrition Plans:</strong> Custom dietary recommendations for optimal blood pressure.
             </li>
@@ -87,7 +91,7 @@ function Home() {
               <strong>Lifestyle Coaching:</strong> Expert guidance for sustainable lifestyle changes.
             </li>
           </ul>
-          <p className="text-lg  mt-6">
+          <p className="text-xl  mt-6">
             By addressing these areas, we help patients reduce medication reliance and improve overall well-being.
             We also foster a supportive community to combat isolation, enhance treatment adherence, 
             and promote better health outcomes.
