@@ -2,7 +2,7 @@ function Home() {
   return (
     <>
       {/* Main Section */}
-      <section className="h-screen mt-32 text-center md:text-left">
+      <section className="h-fit mt-32 text-center md:text-left">
         {/* Text Content */}
         <div className="flex flex-col md:flex-row justify-evenly items-center">
         <div className="max-w-3xl mb-8 md:mb-0">
@@ -17,7 +17,7 @@ function Home() {
         </div>
 
         {/* Image */}
-        <div className="h-auto w-full md:w-1/3">
+        <div className="h-fit w-full md:w-1/3">
           <img
             src="/images/athlete.webp"
             alt="Lady working out"
@@ -53,13 +53,12 @@ function Home() {
      
       </section>
 
-      {/* Cards Section */}
      
 
       {/* Hypertension Section */}
-      <section className="px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
+      <section className="h-fit px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
         {/* Image Section */}
-        <div className="flex-1 w-full md:w-auto">
+        <div className="flex-1 w-full md:w-1/3">
           <img
             src="/images/athlete.webp"
             alt="African woman exercising with focus and energy"
