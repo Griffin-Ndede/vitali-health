@@ -1,6 +1,9 @@
+// import ThemeToggle from "./ThemeToggle";
+
 function Home() {
   return (
     <>
+    {/* <ThemeToggle/> */}
       {/* Main Section */}
       <section className="h-fit mt-32 text-center md:text-left">
         {/* Text Content */}
