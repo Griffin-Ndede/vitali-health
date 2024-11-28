@@ -1,4 +1,35 @@
+import { useState , useRef} from "react";
+import emailjs from 'emailjs-com';
+
 function Footer() {
+
+  const [formData, setFormData] = useState({
+    email: '',
+  })
+
+  const form = useRef()
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('contact_service', 'template_ct8m29m', form.current, 'TPo-ZkYbZekbnKYbe')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <>
       <div id="contact" className="2xl:mx-auto 2xl:container mb-10 py-16">
@@ -10,7 +41,7 @@ function Footer() {
             className="w-full h-fit absolute z-0 hidden xl:block"
           />
           {/* Overlay Content */}
-          <div className="bg-teal bg-opacity-80 py-4 md:py-16 px-4 md:px-12 lg:py-20 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded-3xl">
+          <div className="bg-teal bg-opacity-80 py-4 md:py-10 px-4 md:px-6 lg:py-10 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded">
             {/* Title */}
             <h1 className="text-2xl font-bold text-white text-center">
               Don’t Miss Out!
@@ -22,16 +53,23 @@ function Footer() {
             </p>
 
             {/* Subscription Form */}
-            <div className="flex flex-col sm:flex-row items-center mt-8 w-full lg:w-6/12 gap-4">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white  p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <button className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white text-sm  p-3 sm:p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white">
+            <form onSubmit={handleSubmit} ref={form}
+            className="flex flex-col sm:flex-row items-center mt-8 w-full lg:w-6/12 gap-4">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Your Email"
+                  required
+                  className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white  p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                />
+              <button 
+              type="submit"
+              className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white text-sm  p-3 sm:p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white">
                 Subscribe
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
