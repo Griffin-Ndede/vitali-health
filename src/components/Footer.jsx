@@ -37,7 +37,7 @@ function Footer() {
       </div>
       
       {/* Footer Bottom Section */}
-      <div className="bg-teal h-auto py-6 sm:py-8 w-full flex flex-col sm:flex-row items-center justify-between px-6 md:px-16 text-white text-xs sm:text-sm">
+      <div className="bg-teal h-fit py-3 sm:py-4 w-full flex flex-col sm:flex-row items-center justify-between px-6 md:px-16 text-white text-xs sm:text-xs font-light">
         <p className="text-center sm:text-left mb-4 sm:mb-0">
           &copy; {new Date().getFullYear()} Vitali Health. All Rights Reserved.
         </p>
