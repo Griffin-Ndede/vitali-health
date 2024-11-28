@@ -10,13 +10,13 @@ function Footer() {
             className="w-full h-fit absolute z-0 hidden xl:block"
           />
           {/* Overlay Content */}
-          <div className="bg-teal bg-opacity-80 py-10 md:py-16 px-4 md:px-12 lg:py-20 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded-3xl">
+          <div className="bg-teal bg-opacity-80 py-4 md:py-16 px-4 md:px-12 lg:py-20 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded-3xl">
             {/* Title */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center">
+            <h1 className="text-2xl font-bold text-white text-center">
               Don’t Miss Out!
             </h1>
             {/* Description */}
-            <p className="text-sm sm:text-base md:text-lg text-center text-white mt-6">
+            <p className="text-sm text-center text-white mt-6">
               Subscribe to our newsletter to stay in the loop. Our newsletter is sent once a week on every Friday, 
               so subscribe to get the latest news and updates.
             </p>
@@ -26,9 +26,9 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="border border-white text-white bg-transparent placeholder-white font-medium p-3 sm:p-4 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white  p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
               />
-              <button className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white">
+              <button className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white text-sm  p-3 sm:p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white">
                 Subscribe
               </button>
             </div>
