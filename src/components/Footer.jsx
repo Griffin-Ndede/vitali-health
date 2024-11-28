@@ -5,6 +5,7 @@ function Footer() {
 
   const [formData, setFormData] = useState({
     email: '',
+    name: '',
   })
 
   const form = useRef()
@@ -20,7 +21,7 @@ function Footer() {
     e.preventDefault();
 
     emailjs
-      .sendForm('contact_service', 'template_ct8m29m', form.current, 'TPo-ZkYbZekbnKYbe')
+      .sendForm('Newsletter_subscription', 'template_eiikc1b', form.current, 'UJSCICIDjktvtT98k')
       .then(
         () => {
           console.log('SUCCESS!');
@@ -55,6 +56,15 @@ function Footer() {
             {/* Subscription Form */}
             <form onSubmit={handleSubmit} ref={form}
             className="flex flex-col sm:flex-row items-center mt-8 w-full lg:w-6/12 gap-4">
+               <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Name"
+                  required
+                  className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white  p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                />
                 <input
                   type="email"
                   name="email"
