@@ -1,4 +1,5 @@
 // import ThemeToggle from "./ThemeToggle";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Home() {
   return (
@@ -14,9 +15,12 @@ function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corrupti.
             Consectetur accusamus mollitia provident numquam quibusdam sequi quas dolor.
           </p>
-          <button className="px-6 py-3 bg-teal text-white text-xl rounded-3xl hover:bg-coral transition-colors duration-300">
+        <AnchorLink href="#aboutus">
+          <button 
+          className="px-6 py-3 bg-teal text-white text-xl rounded-3xl hover:bg-coral transition-colors duration-300">
             Get Started
           </button>
+          </AnchorLink>
         </div>
 
         {/* Image */}
@@ -59,7 +63,7 @@ function Home() {
      
 
       {/* Hypertension Section */}
-      <section className="h-fit px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
+      <section id="aboutus" className="h-fit px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-1/3">
           <img

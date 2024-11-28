@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,24 +19,24 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden sm:flex sm:items-center sm:space-x-4">
-            <a
+            <AnchorLink
               href="#"
               className="text-teal hover:bg-soft-coral hover:text-white rounded-3xl px-4 py-2 text-xl "
             >
               Home
-            </a>
-            <a
-              href="#"
+            </AnchorLink>
+            <AnchorLink
+              href="#aboutus"
               className="text-teal hover:bg-soft-coral hover:text-white rounded-3xl px-4 py-2 text-xl "
             >
               About Us
-            </a>
-            <a
-              href="#"
+            </AnchorLink>
+            <AnchorLink
+              href="#contact"
               className="text-teal hover:bg-soft-coral hover:text-white rounded-3xl px-3 py-2 text-xl"
             >
               Get in Touch
-            </a>
+            </AnchorLink>
           </div>
 
           {/* Mobile menu button */}

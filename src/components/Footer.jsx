@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div className="2xl:mx-auto 2xl:container mb-10 py-16">
+      <div id="contact" className="2xl:mx-auto 2xl:container mb-10 py-16">
         <div className="w-full relative flex items-center justify-center">
           {/* Background Images */}
           <img
