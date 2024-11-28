@@ -59,7 +59,7 @@ function Home() {
       </section>
 
       {/* Hypertension Section */}
-      <section id="aboutus" className="h-fit px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center">
+      <section id="aboutus" className="h-fit sm:h-screen px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-1/3">
           <img
