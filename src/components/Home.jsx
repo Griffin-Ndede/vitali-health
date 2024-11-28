@@ -6,14 +6,15 @@ function Home() {
     <>
     {/* <ThemeToggle/> */}
       {/* Main Section */}
-      <section className="h-fit mt-32 text-center md:text-left">
+      <section id="home" 
+      className="h-fit mt-32 text-center md:text-left">
         {/* Text Content */}
         <div className="flex flex-col md:flex-row justify-evenly items-center">
-        <div className="max-w-3xl mb-8 md:mb-0">
+        <div className="max-w-3xl mb-8 md:mb-0 w-2/3">
           <h1 className="text-4xl font-bold text-teal mb-6">Welcome to Vitali Health</h1>
           <p className="text-xl  mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corrupti.
-            Consectetur accusamus mollitia provident numquam quibusdam sequi quas dolor.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, ipsam. 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, perspiciatis.
           </p>
         <AnchorLink href="#aboutus">
           <button 
@@ -35,25 +36,25 @@ function Home() {
         <div className="px-6 md:px-16 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
         {/* Card 1 */}
         <div className="bg-white shadow-2xl rounded-3xl p-10">
-          <h2 className="text-2xl font-bold text-teal mb-2">Personalized Plans</h2>
+          <h2 className="text-2xl font-bold text-teal mb-2">Reduce medication</h2>
           <p className="text-xl">
-            Get workout plans tailored specifically to your goals and fitness level.
+          Natural blood pressure management to lessen reliance on medication.
           </p>
         </div>
 
         {/* Card 2 */}
         <div className="bg-soft-coral shadow-2xl rounded-3xl p-10">
-          <h2 className="text-2xl font-bold text-white mb-2">Expert Coaching</h2>
+          <h2 className="text-2xl font-bold text-white mb-2">Lower health care costs</h2>
           <p className="text-white text-xl">
-            Learn from top fitness experts to stay motivated and on track.
+          Preventive care to reduce medical expenses and complications.
           </p>
         </div>
 
         {/* Card 3 */}
         <div className="bg-white shadow-2xl rounded-3xl p-10">
-          <h2 className="text-2xl font-bold text-teal mb-2">Community Support</h2>
+          <h2 className="text-2xl font-bold text-teal mb-2">Improve quality of life</h2>
           <p className="text-xl">
-            Join a community of like-minded individuals on your fitness journey.
+          Personalized plans for better health, more energy, and improved blood pressure.
           </p>
         </div>
       </div>
@@ -63,18 +64,18 @@ function Home() {
      
 
       {/* Hypertension Section */}
-      <section id="aboutus" className="h-fit px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left">
+      <section id="aboutus" className="h-screen px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-1/3">
           <img
-            src="/images/athlete.webp"
+            src="/images/undraw_personal_training_0dqn.png"
             alt="African woman exercising with focus and energy"
-            className="object-cover rounded-[20%_40%_26%_86%/42%_47%_53%_58%] shadow-2xl w-auto h-2/3"
+            className="object-cover w-full"
           />
         </div>
 
         {/* Text Section */}
-        <div className="flex-1">
+        <div className="flex-1 w-2/3">
           <h1 className="text-4xl font-extrabold mb-6 text-teal md:items-center text-center ">
             A Unified Approach to Hypertension Management
           </h1>

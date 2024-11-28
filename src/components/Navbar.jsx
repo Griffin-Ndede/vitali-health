@@ -20,7 +20,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden sm:flex sm:items-center sm:space-x-4">
             <AnchorLink
-              href="#"
+              href="#home"
               className="text-teal hover:bg-soft-coral hover:text-white rounded-3xl px-4 py-2 text-xl "
             >
               Home
