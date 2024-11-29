@@ -1,4 +1,8 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPills, faSackDollar, faHeartbeat } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function Home() {
   return (
@@ -31,32 +35,36 @@ function Home() {
           </div>
         </div>
 
-        {/* Card Grid */}
-        <div className="px-6 md:px-16 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-          {/* Card 1 */}
-          <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
-            <h2 className="text-lg md:text-xl font-bold text-teal mb-2">Reduce medication</h2>
-            <p className="text-sm md:text-base">
-              Natural blood pressure management to lessen reliance on medication.
-            </p>
-          </div>
+       {/* Card Grid */}
+<div className="px-6 md:px-16 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+  {/* Card 1 */}
+  <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
+    <FontAwesomeIcon icon={faPills} className="text-teal w-10 h-10 mb-4 mx-auto" />
+    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Reduce medication</h2>
+    <p className="text-sm md:text-base">
+      Natural blood pressure management to lessen reliance on medication.
+    </p>
+  </div>
 
-          {/* Card 2 */}
-          <div className="bg-soft-coral shadow-2xl rounded-3xl p-3 md:p-4">
-            <h2 className="text-lg md:text-xl font-bold text-white mb-2">Lower health care costs</h2>
-            <p className="text-sm md:text-base text-white">
-              Preventive care to reduce medical expenses and complications.
-            </p>
-          </div>
+  {/* Card 2 */}
+  <div className="bg-soft-coral shadow-2xl rounded-3xl p-3 md:p-4">
+  <FontAwesomeIcon icon={faSackDollar} className="text-teal  w-10 h-10 mb-4 mx-auto" />
+    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Lower health care costs</h2>
+    <p className="text-sm md:text-base text-teal">
+      Preventive care to reduce medical expenses and complications.
+    </p>
+  </div>
 
-          {/* Card 3 */}
-          <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
-            <h2 className="text-lg md:text-xl font-bold text-teal mb-2">Improve quality of life</h2>
-            <p className="text-sm md:text-base">
-              Personalized plans for better health, more energy, and improved blood pressure.
-            </p>
-          </div>
-        </div>
+  {/* Card 3 */}
+  <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
+    <FontAwesomeIcon icon={faHeartbeat} className="text-teal  w-10 h-10 mb-4 mx-auto" />
+    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Improve quality of life</h2>
+    <p className="text-sm md:text-base">
+      Personalized plans for better health, more energy, and improved blood pressure.
+    </p>
+  </div>
+</div>
+
       </section>
 
       {/* Hypertension Section */}
