@@ -1,5 +1,6 @@
 import { useState , useRef} from "react";
 import emailjs from 'emailjs-com';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Footer() {
 
@@ -55,7 +56,7 @@ function Footer() {
 
             {/* Subscription Form */}
             <form onSubmit={handleSubmit} ref={form}
-            className="flex flex-col sm:flex-row items-center mt-8 w-full lg:w-6/12 gap-4">
+            className="flex flex-col sm:flex-row items-center mt-8 w-full gap-4">
                <input
                   type="text"
                   name="name"
@@ -101,6 +102,9 @@ function Footer() {
           <a href="/contact-us" className="hover:underline">
             Contact Us
           </a>
+          <AnchorLink href="#home">
+            <button>Back to top</button>
+          </AnchorLink>
         </div>
       </div>
     </>
