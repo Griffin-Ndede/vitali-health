@@ -8,6 +8,7 @@ function Footer() {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
+    phone: '',
   });
 
   const form = useRef();
@@ -44,9 +45,9 @@ function Footer() {
             alt="fitness"
             className="w-full h-fit absolute z-0 hidden xl:block"
           />
-          <div className="bg-teal bg-opacity-80 py-4 md:py-10 px-4 md:px-6 lg:py-10 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded">
+          <div className="bg-teal bg-opacity-80 py-4 px-6 md:px-8 lg:py-10 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded">
             <h1 className="text-2xl font-bold text-white text-center">Don’t Miss Out!</h1>
-            <p className="text-sm text-center text-white mt-6">
+            <p className="text-sm text-center text-white mt-4">
               Subscribe to our newsletter to stay in the loop. Our newsletter is sent once a week on every Friday, 
               so subscribe to get the latest news and updates.
             </p>
@@ -54,7 +55,7 @@ function Footer() {
             <form
               onSubmit={handleSubmit}
               ref={form}
-              className="flex flex-col sm:flex-row items-center mt-8 w-full gap-4"
+              className="flex flex-col sm:flex-row items-center mt-6 w-full gap-3 sm:gap-4"
             >
               <input
                 type="text"
@@ -63,7 +64,16 @@ function Footer() {
                 onChange={handleInputChange}
                 placeholder="Name"
                 required
-                className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                className="border border-white text-white placeholder-opacity-75 text-sm bg-transparent placeholder-white p-3 w-full rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+              />
+              <input
+                type="number"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="Phone number"
+                required
+                className="border border-white text-white placeholder-opacity-75 text-sm bg-transparent placeholder-white p-3 w-full rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
               />
               <input
                 type="email"
@@ -72,11 +82,11 @@ function Footer() {
                 onChange={handleInputChange}
                 placeholder="Your Email"
                 required
-                className="border border-white text-white placeholder:opacity-75 text-sm bg-transparent placeholder-white p-3 sm:p-3 w-full sm:flex-1 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                className="border border-white text-white placeholder-opacity-75 text-sm bg-transparent placeholder-white p-3 w-full rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
               />
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white text-sm p-3 sm:p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full sm:w-auto bg-soft-coral hover:bg-opacity-75 text-white text-sm p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
               >
                 Subscribe
               </button>
@@ -85,16 +95,16 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bg-teal h-fit py-6 sm:py-7 w-full flex flex-col sm:flex-row items-center justify-between px-6 md:px-16 text-white text-xs sm:text-xs font-light">
+      <div className="bg-teal py-6 w-full flex flex-col sm:flex-row items-center justify-between px-4 md:px-8 lg:px-16 text-white text-xs font-light">
         <p className="text-center sm:text-left mb-4 sm:mb-0">
           &copy; {new Date().getFullYear()} Vitali Health. All Rights Reserved.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 text-center">
           <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
           <a href="/terms-of-service" className="hover:underline">Terms of Service</a>
           <a href="/contact-us" className="hover:underline">Contact Us</a>
-          <AnchorLink href="#home" className="flex items-center gap-1">
+          <AnchorLink href="#home" className="flex items-center gap-1 hover:underline">
             <FontAwesomeIcon icon={faArrowUp} className="text-soft-coral w-4 h-4" />
             <span>Top</span>
           </AnchorLink>

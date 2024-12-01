@@ -7,16 +7,16 @@ import { faPills, faSackDollar, faHeartbeat } from '@fortawesome/free-solid-svg-
 function Home() {
   return (
     <>
-      {/* Main Section */}
-      <section id="home" className="h-fit mt-32 text-center md:text-left">
+     {/* Main Section */}
+      <section id="home" className="min-h-screen md:h-screen mt-20 md:mt-20 text-center md:text-left flex flex-col justify-between">
         {/* Text Content */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-6 md:px-10">
+        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center px-4 sm:px-6 md:px-10">
           <div className="max-w-3xl mb-8 md:mb-0 w-full md:w-2/3 text-center md:text-left">
             <h1 className="text-2xl md:text-3xl font-bold text-teal mb-6">Welcome to Vitali Health</h1>
-            <p className="text-sm md:text-base w-5/6 mb-6 mx-auto md:mx-0">
-            Welcome to <strong className="text-soft-coral">Vitali Health</strong> —your personalized path to better hypertension management. 
-            From real-time tracking to expert guidance, we provide the tools and support you need to 
-            take control of your health. Empower your journey today!
+            <p className="text-sm md:text-base w-full sm:w-5/6 mb-6 mx-auto md:mx-0">
+              Welcome to <strong className="text-primary-green">Vitali Health</strong> —your personalized path to better hypertension management. 
+              From real-time tracking to expert guidance, we provide the tools and support you need to 
+              take control of your health. Empower your journey today!
             </p>
             <AnchorLink href="#aboutus">
               <button className="px-6 py-3 bg-teal text-white text-sm md:text-base rounded-3xl hover:bg-coral transition-colors duration-300">
@@ -26,55 +26,54 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className="h-fit w-full md:w-1/3 mt-6 md:mt-0">
+          <div className="h-auto w-full md:w-1/3 mt-20 md:mt-0">
             <img
-              src="/images/athlete.webp"
+              src="/images/community.jpeg"
               alt="Lady working out"
-              className="object-cover rounded-[20%_40%_26%_86%/42%_47%_53%_58%] shadow-2xl w-full"
+              className="object-cover rounded-[20%_56%_26%_86%/42%_60%_20%_22%] w-full"
             />
           </div>
         </div>
 
-       {/* Card Grid */}
-<div className="px-6 md:px-16 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-  {/* Card 1 */}
-  <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
-    <FontAwesomeIcon icon={faPills} className="text-teal w-10 h-10 mb-4 mx-auto" />
-    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Reduce medication</h2>
-    <p className="text-sm md:text-base">
-      Natural blood pressure management to lessen reliance on medication.
-    </p>
-  </div>
+        {/* Card Grid */}
+        <div className="px-2 sm:px-4 md:px-8 mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+          {/* Card 1 */}
+          <div className="bg-white shadow-2xl rounded-3xl p-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+            <FontAwesomeIcon icon={faPills} className="text-teal w-10 h-10 mb-4 mx-auto" />
+            <h2 className="text-lg font-bold text-teal mb-2">Reduce medication</h2>
+            <p className="text-sm md:text-base">
+              Natural blood pressure management to lessen reliance on medication.
+            </p>
+          </div>
 
-  {/* Card 2 */}
-  <div className="bg-soft-coral shadow-2xl rounded-3xl p-3 md:p-4">
-  <FontAwesomeIcon icon={faSackDollar} className="text-teal  w-10 h-10 mb-4 mx-auto" />
-    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Lower health care costs</h2>
-    <p className="text-sm md:text-base text-teal">
-      Preventive care to reduce medical expenses and complications.
-    </p>
-  </div>
+          {/* Card 2 */}
+          <div className="bg-soft-coral shadow-2xl rounded-3xl p-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+            <FontAwesomeIcon icon={faSackDollar} className="w-10 h-10 mb-4 mx-auto" />
+            <h2 className="text-lg font-bold mb-2">Lower health care costs</h2>
+            <p className="text-sm md:text-base">
+              Preventive care to reduce medical expenses and complications.
+            </p>
+          </div>
 
-  {/* Card 3 */}
-  <div className="bg-white shadow-2xl rounded-3xl p-3 md:p-4">
-    <FontAwesomeIcon icon={faHeartbeat} className="text-teal  w-10 h-10 mb-4 mx-auto" />
-    <h2 className="text-lg md:text-lg font-bold text-teal mb-2">Improve quality of life</h2>
-    <p className="text-sm md:text-base">
-      Personalized plans for better health, more energy, and improved blood pressure.
-    </p>
-  </div>
-</div>
-
+          {/* Card 3 */}
+          <div className="bg-white shadow-2xl rounded-3xl p-4 hover:scale-105 transition-transform duration-300 ease-in-out">
+            <FontAwesomeIcon icon={faHeartbeat} className="text-teal w-10 h-10 mb-4 mx-auto" />
+            <h2 className="text-lg font-bold text-teal mb-2">Improve quality of life</h2>
+            <p className="text-sm md:text-base">
+              Personalized plans for better health, more energy, and improved blood pressure.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Hypertension Section */}
-      <section id="aboutus" className="h-fit sm:h-screen px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center">
+      <section id="aboutus" className="h-screen sm:h-screen px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-1/3">
           <img
-            src="/images/undraw_personal_training_0dqn.png"
+            src="/images/meditating1.jpeg"
             alt="African woman exercising with focus and energy"
-            className="object-cover w-full"
+            className="object-cover rounded-[20%_56%_26%_86%/42%_60%_20%_22%] w-full"
           />
         </div>
 
@@ -112,7 +111,7 @@ function Home() {
       <section id="whatwedo" className="h-fit sm:min-h-screen px-6 md:px-16 mt-12 flex flex-col md:flex-row gap-8 md:text-left items-center bg-gray-200">
         {/* Image Section */}
         <div className="flex-1 w-full md:w-2/3 mt-8 md:mt-0">
-          <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-soft-coral text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-primary-green text-center md:text-left">
             Tired of managing hypertension
           </h1>
           <p className="text-sm md:text-base mb-4">
@@ -121,13 +120,13 @@ function Home() {
           <p className="text-sm md:text-base mb-4">Our innovative solution offers:</p>
           <ul className="list-disc pl-6 space-y-2 text-sm md:text-base">
             <li>
-              <strong className="text-soft-coral">Personalized support:</strong> Tailored recommendations just for you.
+              <strong className="text-primary-green">Personalized support:</strong> Tailored recommendations just for you.
             </li>
             <li>
-              <strong className="text-soft-coral">Real-time monitoring:</strong> Track your progress and stay informed.
+              <strong className="text-primary-green">Real-time monitoring:</strong> Track your progress and stay informed.
             </li>
             <li>
-              <strong className="text-soft-coral">Expert guidance:</strong> Access one-on-one consultations with top health professionals, including doctors, 
+              <strong className="text-primary-green">Expert guidance:</strong> Access one-on-one consultations with top health professionals, including doctors, 
               nutritionists, fitness experts, stress management specialists, and lifestyle coaches..
             </li>
           </ul>
@@ -137,7 +136,7 @@ function Home() {
         </div>
         <div className="flex-1 w-full md:w-1/3">
           <img
-            src="/images/fitness1.webp"
+            src="/images/personalized.jpeg"
             alt="African woman exercising with focus and energy"
             className="object-cover w-full rounded-[20%_40%_26%_86%/42%_30%_53%_20%]"
           />

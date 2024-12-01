@@ -9,6 +9,7 @@ export default {
     extend: {
       colors: {
         "teal": '#008080', // Teal
+        "primary-green": "#002424", //special green
         "soft-coral": '#F28C8C', // Soft Coral
         "Grey": '#838383', // Grey
         "light-bg": '#f8f9fa', // Light mode background
