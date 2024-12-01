@@ -20,12 +20,13 @@ export default {
         "dark-bg": '#121212', // Dark mode background
       },
       screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
+        'sm': '640px',  // Small: for small phones or portrait tablets
+        'md': '768px',  // Medium: for tablets or smaller laptops
+        'lg': '1024px', // Large: for standard laptops and larger tablets
+        'xl': '1280px', // Extra Large: for large desktops or high-resolution laptops
+        '2xl': '1536px',// 2x Extra Large: for ultra-wide or very high-resolution monitors
       },
+      
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         secondary: ['Merriweather', 'serif'],
