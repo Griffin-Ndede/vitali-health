@@ -38,6 +38,11 @@ function Footer() {
         },
         () => {
           failureAlert();
+          setFormData({
+            email: '',
+            name: '',
+            phone: '',
+          })
         },
       );
         // function to show success alert prompt
