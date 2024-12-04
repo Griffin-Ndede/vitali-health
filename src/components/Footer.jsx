@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2';
 
 function Footer() {
   const [formData, setFormData] = useState({
@@ -28,12 +29,36 @@ function Footer() {
       .sendForm('Newsletter_subscription', 'template_eiikc1b', form.current, 'UJSCICIDjktvtT98k')
       .then(
         () => {
-          console.log('SUCCESS!');
+          successAlert();
+          setFormData({
+            email: '',
+            name: '',
+            phone: '',
+          })
         },
-        (error) => {
-          console.log('FAILED...', error.text);
+        () => {
+          failureAlert();
         },
       );
+        // function to show success alert prompt
+  const successAlert = () => {
+    Swal.fire({
+      title: 'Success',
+      text: 'Thank you for subscribing to our newsletter',
+      icon: 'success',
+      confirmButtonText: 'OK',
+    })
+  };
+
+  // function to show failure alert prompt
+  const failureAlert = (message) => {
+    Swal.fire({
+      title: 'Error',
+      text: message,
+      icon: 'error',
+      confirmButtonText: 'OK',
+    });
+  };
   };
 
   return (
