@@ -131,8 +131,16 @@ function Home() {
             </li>
           </ul>
           <p className="text-sm md:text-base mt-6">
-            Join now and take control of your health!
-          </p>
+            
+          
+          <a 
+          href="https://forms.gle/upWUNweZJLGu1YXp9" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block px-6 py-3 mt-4 bg-teal text-white text-sm md:text-base rounded-3xl hover:bg-soft-coral transition-colors duration-300"
+        >
+          Join Now
+        </a> and take control of your health!</p>
         </div>
         <div className="flex-1 w-full md:w-1/3">
           <img
