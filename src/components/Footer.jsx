@@ -129,7 +129,7 @@ function Footer() {
       <div className="bg-teal w-full px-10 py-4 flex flex-col md:flex-row items-center justify-between text-white text-xs font-light">
   <div className="flex flex-col items-center md:items-start mb-2 md:mb-0">
     <p className="text-center md:text-left mb-2 md:mb-0">
-      &copy; {new Date().getFullYear()} Vitali Health. All Rights Reserved.
+      &copy; {new Date().getFullYear()} Vital Innovations. All Rights Reserved.
     </p>
   </div>
 
