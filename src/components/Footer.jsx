@@ -76,7 +76,7 @@ function Footer() {
             className=" w-full h-auto absolute z-0 hidden xl:block"
           />
           <div className="bg-teal bg-opacity-80 py-2 px-4 md:px-6 lg:py-5 w-full md:w-10/12 lg:w-8/12 flex flex-col items-center justify-center relative z-40 rounded mx-auto">
-  <h1 className="text-2xl font-bold lg:text-3xl text-white text-center">Don’t Miss Out!</h1>
+  <h1 className="text-2xl font-bold lg:text-3xl text-white text-center">Don&apos;t Miss Out!</h1>
   <p className="text-sm text-center text-white mt-4 max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
     Subscribe to our newsletter to stay in the loop. Our newsletter is sent once a week on every Friday, 
     so subscribe to get the latest news and updates.
